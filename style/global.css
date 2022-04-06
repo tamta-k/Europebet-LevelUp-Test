@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #141529;
+  color: #FFFFFF;
+}
+
+.header {
+  visibility: visible;
+}
+
+.header .headerDiv {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  background-attachment: fixed;
+}
+
+.header .headerTxt {
+  font-family: Helvetica Neue LT GEO, Bold;
+}
+
+.header .headerTxt h2 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header .headerBtn .btn {
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: none;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.s1Div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s1Div .div1 {
+  text-align: left;
+}
+
+.s1Div .div1 h1 {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 13px;
+  width: 93px;
+  text-align: center;
+  margin: 30px 0px 10px 0px;
+}
+
+.s1Div .div1 h2 {
+  margin: 15px 0px;
+  width: 629px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.s1Div .div1 h3 {
+  margin: 15px 0px;
+  width: 532px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.s2Div {
+  position: relative;
+}
+
+.s2Div .div1 img {
+  width: 100%;
+  position: absolute;
+}
+
+.s2Div .div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.s2Div .div2 .card {
+  width: 274px;
+  height: 145px;
+  background: #2E9EA1 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  top: -80%;
+}
+
+.s2Div .div2 .card .card {
+  position: absolute;
+}
+
+.s2Div .div2 .locked div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.s2Div .div2 .locked div img {
+  width: 11px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+.s4Div .div1 {
+  margin: 40px auto 10px 20px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.s4Div .div1 h2 {
+  width: 382px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.s4Div .div1 h3 {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.s4Div .div2 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.s4Div .div2 img {
+  margin: 8px;
+  width: 192px;
+  height: 224px;
+}
+
+.s4Div ::-webkit-scrollbar {
+  height: 6px;
+  width: 729px;
+}
+
+.s4Div ::-webkit-scrollbar-thumb:horizontal {
+  background: transparent -webkit-gradient(linear, right top, left top, from(#70E0B5), to(#2E9EA1)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(270deg, #70E0B5 0%, #2E9EA1 100%) 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+}
+
+.s5Div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.s5Div .div1 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.s5Div .div2 .accDiv {
+  top: 2041px;
+  left: 552px;
+  width: 854px;
+  height: 60px;
+}
+
+.s5Div .div2 .accDiv .accordion {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 854px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+}
+
+.s5Div .div2 .accDiv .accordion img {
+  width: 9px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.s5Div .div2 .accDiv .panel {
+  display: none;
+  overflow: hidden;
+}
+/*# sourceMappingURL=global.css.map */
