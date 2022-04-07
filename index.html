@@ -41,10 +41,8 @@
 
         <section class="section" id="section2">
             <div class="s2Div">
-                <div class="div1">
-                    <img src="assets/banner.jpg" alt="Banner">
-                </div> 
-                <div class="div2">
+                <img src="assets/banner.jpg" alt="Banner" class="banner-image"> 
+                <!-- <div class="div2">
                     <div class="card unlocked">
                         <div>
                             <h3> 1-4 კვირა </h3>
@@ -72,35 +70,35 @@
                         </div>
                         <h2> 2 000 000 ₾</h2> 
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <section class="section" id="section3">
-            <div>
+        <section class="section s3Div" id="section3">
+            <div class="div1">
                 <h2>12 კვირის განმავლობაში, მიიღე ფულადი პრიზები ყოველკვირეული საპრიზო ფონდიდან</h2>
             </div>
-            <div>
+            <div class="div2">
                 <div class="btns">
-                    <button> 2.07 - 29.07</button>
+                    <button class="marked"> 2.07 - 29.07</button>
                     <button> 2.07 - 29.07 </button>
                     <button> 2.07 - 29.07</button>
                     <button> 2.07 - 29.07 </button>
                 </div>
 
                 <div class="multipliersBox">
-                    <div>
+                    <div class="imgDiv">
                         <img src="assets/multipliers-img.png" alt="multipliers">
                     </div>
-                    <div>
+                    <div class="txtDiv">
                         <h2>ᲓᲐᲘᲭᲘᲠᲔ X-ᲔᲑᲘ</h2>
                         <h3>დაიკავე საპრიზო ადგილი ლიდერბორდში ან ჩამოაგდე ფულადი პრიზის შემთხვევითი მულტიპლიკატორი</h3>
                     </div>
                 </div>
 
                 <div class="tables">
-                    <div class="part1">
-                        <div>
+                    <div class="part1 table">
+                        <div class="tableTxt">
                             <h3>ᲛᲝᲮᲕᲓᲘ ᲧᲝᲕᲔᲚᲙᲕᲘᲠᲔᲣᲚ ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ</h3>
                             <h4>ერთ სპინზე დაფიქსირებული მოგების ყველაზე მაღალი კოეფიციენტი არის შენი ქულა ლიდერბორდში</h4>
                         </div>
@@ -116,8 +114,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="part2">
-                        <div>
+                    <div class="part2 table">
+                        <div class="tableTxt">
                             <h3>ᲧᲝᲕᲔᲚᲓᲦᲔ ᲛᲘᲘᲦᲔ ᲨᲔᲛᲗᲮᲕᲔᲕᲘᲗᲘ ᲤᲣᲚᲐᲓᲘ ᲞᲠᲘᲖᲘ ᲜᲔᲑᲘᲡᲛᲘᲔᲠ ᲡᲞᲘᲜᲖᲔ</h3>
                             <h4>ყოველდღიური, 36 000₾-ის ფულადი პრიზები</h4>
                         </div>
@@ -138,8 +136,6 @@
                 <div class="texts">
                     <h5>*პრიზები დაირიცხება ავტომატურად მოგებისთანავე.</h5>
                     <h5>*ლიდერბორდი და დარჩენილი ქეშ დროფ პრიზების ოდენობა განახლდება ავტომატურად, მონაწილე თამაშების ფანჯარაში.</h5>
-                    <h5>*თუ მომგებიან სპინზე დადებული ფსონი გადააჭარბებს 40₾-ს, მაშინ მოთამაშის მოგებული მულტიპლიკატორი გამრავლდება 40₾-ზე</h5>
-                    <h5>*ფრისპინების მოგების შემთხვევაში, 10 ცალი ფრისპინის ნომინალი განისაზღვრებამომგებიან სპინზე დადებული ფსონის შესაბამისად. თუ მომგებიან სპინზე დადებული ფსონი გადააჭარბებს 4₾-ს, მოთამაშე ჯამურად მიიღებს 10 ცალ 4 ლარიან ფრისპინს</h5>
                 </div>
             
             </div>
@@ -213,16 +209,16 @@
 
         <footer>
             <div>
-                <button class="previous-btn">
+                <button class="move-btn" id="previous-btn">
                     <img src="assets/tab-slider-arrow-r.png" alt="Previous" id="previus-btn-icon">
                     წინა აქცია
                 </button>
             </div>
-            <div>
+            <div class="middle-btn">
                 <button class="placeBet-btn">Place a bet</button>
             </div>
             <div>
-                <button class="next-btn">
+                <button class="move-btn" id="next-btn">
                     შემდეგი აქცია
                     <img src="assets/tab-slider-arrow-r.png" alt="Next" id="next-btn-icon">
                 </button>

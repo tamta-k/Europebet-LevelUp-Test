@@ -44,6 +44,8 @@ table {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #141529;
@@ -87,6 +89,10 @@ table {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.header .headerBtn .btn i {
+  background-color: initial;
+}
+
 .s1Div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,10 +105,13 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30px;
 }
 
 .s1Div .div1 {
   text-align: left;
+  width: 629px;
+  margin-left: 10px;
 }
 
 .s1Div .div1 h1 {
@@ -117,7 +126,7 @@ table {
 
 .s1Div .div1 h2 {
   margin: 15px 0px;
-  width: 629px;
+  width: 100%;
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
@@ -126,7 +135,7 @@ table {
 
 .s1Div .div1 h3 {
   margin: 15px 0px;
-  width: 532px;
+  width: 100%;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
@@ -134,53 +143,198 @@ table {
 }
 
 .s2Div {
+  margin-top: 50px;
+  /* .div2 {
+        display: flex;
+        flex-direction: row ;
+        //justify-content: space-b;
+        position: absolute;
+
+       .card  {
+            //position: absolute;
+            width: 274px;
+            height: 145px;
+            background: #2E9EA1 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            text-align: center;
+            
+            top: -80%;
+            
+            
+            .card div {
+                position: absolute;
+                background-color: initial;
+            }
+        } 
+
+        .locked div{
+            display: flex;
+            justify-content: center;
+            img {
+                width: 11px;
+                height: 16px;
+                padding-right: 10px;
+            }
+
+        }
+    } */
+}
+
+.s2Div .banner-image {
+  width: 100%;
   position: relative;
 }
 
-.s2Div .div1 img {
-  width: 100%;
-  position: absolute;
-}
-
-.s2Div .div2 {
+.s3Div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.s2Div .div2 .card {
-  width: 274px;
-  height: 145px;
-  background: #2E9EA1 0% 0% no-repeat padding-box;
-  border-radius: 20px;
-  position: relative;
+.s3Div .div1 {
   text-align: center;
-  top: -80%;
+  font-size: 20px;
+  width: 586px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
 
-.s2Div .div2 .card .card {
-  position: absolute;
+.s3Div .div2 {
+  width: 100%;
+  background: #1A293B 0% 0% no-repeat padding-box;
 }
 
-.s2Div .div2 .locked div {
+.s3Div .div2 .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 40px;
 }
 
-.s2Div .div2 .locked div img {
-  width: 11px;
-  height: 16px;
-  padding-right: 10px;
+.s3Div .div2 .btns button {
+  padding: 10px 30px;
+  border-radius: 13px 13px 0px 0px;
+  background: #1A293B 0% 0% no-repeat padding-box;
+}
+
+.s3Div .div2 .multipliersBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 564px;
+  height: 109px;
+  background: #203248 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 20px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s3Div .div2 .multipliersBox .imgDiv {
+  width: 60px;
+  margin-right: 60px;
+  margin-left: 10px;
+}
+
+.s3Div .div2 .multipliersBox .imgDiv img {
+  background: #203248 0% 0% no-repeat padding-box;
+}
+
+.s3Div .div2 .multipliersBox .txtDiv {
+  width: 400px;
+}
+
+.s3Div .div2 .multipliersBox .txtDiv h2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  background: #203248 0% 0% no-repeat padding-box;
+}
+
+.s3Div .div2 .multipliersBox .txtDiv h3 {
+  font-size: 14px;
+  background: #203248 0% 0% no-repeat padding-box;
+}
+
+.s3Div .div2 .tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #1A293B 0% 0% no-repeat padding-box;
+}
+
+.s3Div .div2 .tables .table {
+  background: #1A293B 0% 0% no-repeat padding-box;
+  width: 415px;
+}
+
+.s3Div .div2 .tables .table .tableTxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  width: 382px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.s3Div .div2 .tables .table .tableTxt h3 {
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #1A293B 0% 0% no-repeat padding-box;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+.s3Div .div2 .tables .table .tableTxt h4 {
+  font-size: 14px;
+  line-height: 15px;
+  width: 100%;
+  background: #1A293B 0% 0% no-repeat padding-box;
+  padding-bottom: 30px;
+}
+
+.s3Div .div2 .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1A293B 0% 0% no-repeat padding-box;
+  margin: 30px auto;
+}
+
+.s3Div .div2 .texts h5 {
+  background: #1A293B 0% 0% no-repeat padding-box;
+  padding-top: 5px;
+  width: 700px;
+  text-align: center;
+}
+
+.s4Div {
+  margin-top: 50px;
 }
 
 .s4Div .div1 {
@@ -213,14 +367,16 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .s4Div .div2 img {
   margin: 8px;
   width: 192px;
   height: 224px;
+  border-radius: 13px;
 }
 
 .s4Div ::-webkit-scrollbar {
@@ -235,8 +391,8 @@ table {
 }
 
 .s5Div {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .s5Div .div1 {
@@ -245,37 +401,95 @@ table {
   margin-bottom: 10px;
 }
 
+.s5Div .div2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .s5Div .div2 .accDiv {
-  top: 2041px;
-  left: 552px;
-  width: 854px;
+  width: 860px;
   height: 60px;
 }
 
 .s5Div .div2 .accDiv .accordion {
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 854px;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 .s5Div .div2 .accDiv .accordion img {
   width: 9px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: initial;
 }
 
 .s5Div .div2 .accDiv .panel {
   display: none;
   overflow: hidden;
+  padding: 20px;
+  width: 854px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 3px solid #70E0B5;
+}
+
+footer .move-btn {
+  font-size: 15px;
+  border-style: none;
+}
+
+footer .move-btn img {
+  margin: auto 2px;
+  width: 6px;
+}
+
+footer .move-btn #previus-btn-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+footer .placeBet-btn {
+  width: 170px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #F05A22;
+  font-size: 17px;
 }
 /*# sourceMappingURL=global.css.map */
