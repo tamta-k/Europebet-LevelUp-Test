@@ -25,3 +25,5 @@ let numJewelsInStones = function(jewels, stones) {
 
     return counter;
 };
+
+console.log(numJewelsInStones);
